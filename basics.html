@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- title is used for giving the name of our webpage -->
+    <title>Basics Html</title>
+
+
+    <style>
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <!-- <h></h> is basically used for giving the heading to our pages -->
+    <h1>First heading </h1>
+    <h2>Second heading</h2>
+    <h3>Third heading</h3>
+    <h4>Fourth heading</h4>
+    <h5>Fifth heading</h5>
+    <h6>Sixth heading</h6>
+    <hr>
+
+
+    <!-- <p></p> tag is basically used for writing paragraph
+    <br> is used for break the line
+    <hr>is used for giving a line
+    <b></b> is used for bold the characters same as <strong></strong>
+    <u></u> is use for underline the words
+    <em></em> is use for giving the italic look of words
+    <sup></sup> for giving the upper power(superscript)
+    <sub></sub> for giving the down power(subscript) -->
+
+    <br>
+    <p>Lorem ipsum dolor sit amet <b>Thats dashzer</b> consectetur <u>My name is anthony gonsalvis</u> adipisicing elit.
+        Perferendis, molestias dolores <em>My attitude</em> Molestias architecto nulla quaerat minima pariatur, corporis
+        assumenda repudiandae exercitationem? Laboriosam labore quae assumenda quas? Rem cumque dolor inventore
+        exercitationem
+        eaque repellat iure natus facere adipisci blanditiis quae autem iusto, ad quia dolores.</p>
+    <br>
+    10 <sup>5</sup><br>
+    O <sub>2</sub>
+    <hr>
+
+
+
+    <!-- <link rel="stylesheet" href=""> this tag is used for creating a path between our webpage to another pages. same as <a href=""></a>
+    Attributes-
+    href - is used to write the url of websites.
+    target - is used to decide where our newpage is open 
+                if its blank- then new pages.
+                if its parent- then same page. -->
+    <br>
+    <h1>Links</h1>
+    <a href="https://youtube.com/" target="_parent"> youtube</a>
+    <br><br>
+    <hr>
+
+
+
+    <!-- <table></table> is used to create a table wtih given data.
+    <th></th> for table heading.
+    <td></td> for table details.
+    <tr></tr> to filled table data in row.
+    Attributes-:
+    rowspan - to provide space in row.
+    colspan - to provide space in column. -->
+    <h1>Table</h1>
+    <table>
+
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Class</th>
+            <th rowspan="2">Roll no.</th>
+            <th colspan="2">Fees</th>
+        </tr>
+
+        <tr>
+            <td>mid term</td>
+            <td>last term</td>
+        </tr>
+        <tr>
+            <td>sachin</td>
+            <td>12th</td>
+            <td>67</td>
+            <td>1200%</td>
+            <td>1500%</td>
+        </tr>
+        <tr>
+            <td>sachin</td>
+            <td>12th</td>
+            <td>67</td>
+            <td>1200%</td>
+            <td>1500%</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">Total</td>
+            <td colspan="2" rowspan="2">5400%</td>
+        </tr>
+    </table>
+    <HR>
+    </HR>
+
+
+
+
+    <!-- 
+    list is used for arrange our data in a symmetrical manner
+    there are three type of list --
+        1. <ul></ul> unorder list.
+        2. <ol></ol> order list.
+        3. <dl></dl> discription list.
+        <li></li> is used for list items. -->
+    <br>
+    <h1>List</h1>
+
+    <h3>To crack FAANG</h3>
+    <ol>
+        <li>Master DSA</li>
+        <li>Full stack web-development</li>
+        <li>Machine learning</li>
+    </ol>
+
+
+    <h3>keys for web-development</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>MONGO DB</li>
+        <li>REACT</li>
+        <li>EXPRESS</li>
+        <li>NODE JS</li>
+    </ul>
+    <hr>
+
+
+
+
+
+
+
+
+    <!-- 
+
+    forms is used for collecting data from user to webpage
+    there are two things in our forms--
+        1. <label for=""></label> it is basically used to given the information about the data we have to filled.
+        2. <input type="text"> it used to store the data.
+        3. <textarea name="" cols="30" rows="10"></textarea> its use to get a large amount of input
+            Attributes-
+                type - it states the type of data we ask from user like- date, name , age etc.
+                placeholder - it give the hint of user what he has to fill inside the box. 
+                value - it gives some default value for the given form.
+                name - its is used to give the name of our datatype
+
+        some html5 attributes : 
+                required - its states that the given form is compulsary to fill.
+                autofocus - its autofocus the given form.
+                checked - its use to give a default check in radio buttons.
+                readonly - this attribute denied the acess to write/change in input box.if we dont want our read only data to submit we have to use 
+                            'disabled' attribute.
+                min/max - this attribute is basically used to give a rage in input.
+                maxlength- this attribute is basically used to fix the length of input.
+
+ -->
+    <h1>Forms</h1>
+
+    <form>
+        <fieldset>
+
+            <legend>Details</legend>
+
+            Name : <input type="text" placeholder="Enter your name here..." value="">
+            <br><br>
+
+            Address : <textarea name="" cols="30" rows="10"></textarea>
+            <br><br>
+
+            Gender :
+            <input type="radio" value="M" name="gender" />Male
+            <input type="radio" value="F" name="gender">Female
+            <br><br>
+
+            Age :
+            <select>
+                <option value="18">18</option>
+                <option value="18+">18+</option>
+                <option value="18-">18-</option>
+
+            </select>
+            <br><br>
+
+            Hobbies :
+            <input type="checkbox" value="playing" name="hobbies[]"> Playing
+            <input type="checkbox" value="sleeping" name="hobbies[]"> Sleeping
+            <input type="checkbox" value="reding" name="hobbies[]"> Reading
+            <br><br>
+
+            Image :
+            <input type="file" value="image">
+            <br><br>
+
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>HTML 5 elements</legend>
+            <br><br>
+
+            Color :
+            <input type="color" name="color">
+            <br><br>
+
+            Email : 
+            <input type="email" name="email">
+            <br><br>
+
+            password : 
+            <input type="password" name="password">
+            <br><br>
+
+            Phone no. : 
+            <input type="number" name="number">
+            <br><br>
+
+            Date :
+            <input type="date" name="date">
+            <br><br>
+
+            Date Time : 
+            <input type="datetime" name="datetime">
+            <br><br>
+
+            Time : 
+            <input type="time" name="time">
+            <br><br>
+
+            Month : 
+            <input type="month" name="month">
+            <br><br>
+
+            Week :
+            <input type="week" name="week">
+            <br><br>
+
+            Range : 
+            <input type="range" name="range">
+            <br><br>
+
+            <input type="submit" value="send">
+        </fieldset>
+
+
+    </form>
+    <br>
+    <hr>
+
+
+
+
+
+
+
+    <!--     
+    <img src="" alt=""> this tag is specific used to upload any img in our webpage.
+    Attributes-
+        src- this Attribute is for the source of our image.
+        alt - this is used as alternative information regarding the image its show when the image is unable to view in webpage.
+        width and height- is use to costomize the size of our image. -->
+    <h1>Image</h1>
+    <br>
+    <img src="back1.jpg" alt="spiderman image" height="300px" width="350px">
+    <br>
+    <hr>
+
+
+    <!-- 
+    <video src=""></video> this tag is basically used to upload video into our webpages.
+    <source> we use this tag to write the source(src) and quality(type) of our video.
+    Attributes-
+        preload- it load the video file as soon as webpage open.
+        autoplay- it start playing video as soon as possible.
+        controls- it used to giving controls like play,pouse,volume etc. into out video.
+        loop- this tag is used to play our video into a loop pattern(repeat again and again).
+        muted- this specify the video should be muted as default.
+        url- this Attribute is basically used to attched document like poster,videfile,thumbnail to our video. -->
+    <h1>Video</h1>
+    <br>
+    <video preload="" autoplay="" loop="" width="50%" height="400px" muted="">
+        <source src="video.mp4" type="video/mp4">
+        this is a undersea video.
+    </video>
+    <br>
+    <hr>
+
+    <!-- <audio src=""></audio> this tag is same as audio tag -->
+
+
+
+
+
+
+    <!-- 
+    <div></div> and <span></span> this is basically used as container in our webpage
+    div is block element while span is a inline element -->
+    <br>
+    <div style="border: 8px solid pink; padding: 20px ;">
+        <h1>Div and span</h1>
+        <p>Thanks for <span style="color: blue; border: 2px solid black;">Visiting</span> here</p>
+    </div>
+    <br>
+    <hr>
+
+
+
+
+
+
+    <!-- 
+    <iframe></iframe> this tag is basically used to create or connect any other webpage into our webpage like- youtube,maps,websites etc.
+    Attributes-
+            src- used for path or source of the webpage we want to connect.
+            frameborder- used for the outside border of the webpage. -->
+    <h1>Iframe</h1>
+    <br>
+    <iframe src="https://youtube.com/"></iframe>
+
+    <br><br><hr>
+
+
+
+    <!-- How to impliement auto suggestion in input -->
+    <br><br>
+    <form> 
+
+        Courses : 
+        <input type="text" name="course" autofocus="" list="course">
+
+        <datalist id="course">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+
+        </datalist>
+
+        <input type="submit" value="search">
+    </form>
+
+    <br><br><hr>
+
+
+
+<!-- 
+    <details></details> -- this tag is basically used to write details or discription or paragraph in our webpage.
+    <summary></summary> -- this tag is used to give name of our detail tag 
+ -->
+            <br><br>
+
+            <details open="">
+
+                <summary>Click here for more information</summary>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur rerum officia hic eligendi numquam aperiam adipisci obcaecati sint. Officia possimus nesciunt consectetur unde, est, dolore eveniet sint reprehenderit repellendus qui deleniti eos totam modi laboriosam vel similique id delectus omnis nisi atque? Sint, fugiat enim rem nesciunt dolore quae voluptates temporibus accusamus optio expedita debitis! Unde sint exercitationem tempora porro obcaecati dolorum dolor. Id tempora reprehenderit magni consectetur repellat odio, culpa rem iste? Dolorum tempore voluptatum nobis non ratione maxime nostrum nam magnam quisquam. Saepe, quidem impedit! Quis inventore tempora ducimus excepturi ratione iste cumque accusantium rerum saepe ea fuga delectus recusandae suscipit provident, asperiores quos fugit, quas possimus temporibus. Vitae labore ullam doloremque consectetur. Quidem, dignissimos repellendus fuga commodi sapiente quis molestias laudantium, assumenda sint vitae ullam aliquam maiores. Vitae a temporibus quas ducimus laudantium voluptatum, illum reprehenderit blanditiis incidunt error. Optio, eaque. Sint quos enim sed magnam?</p>
+
+            </details>
+
+            <br><br><hr>
+
+    
+
+
+</body>
+
+</html>
