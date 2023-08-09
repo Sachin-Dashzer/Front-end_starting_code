@@ -1,0 +1,32 @@
+ 
+	Git commands -:
+
+	pwd = present working directory
+	clear = clear the terminal
+	cd = change drive
+
+	git = to open the git files
+	config = basic git details
+	config user.x = for updating personal details (x = user data like : name , email etc)
+	init = to asing the directory to git
+	status = to find the current directory files and status
+	code . = open file in vs code
+	
+	commit = to upload our file to git
+	add --a = to add our file to git
+	commit --m = to upload our new file with a massage
+	log = to see the whole history of our commited directory
+
+	clone = to clone any github project
+	ls = to see all files in folder
+
+	--global = when we have to change something globally like username or useremail
+
+	.gitignore = its a folder name used when we have to ignore some files in our git so we can write their name in it and git ignore that files.
+	
+	diff = used to compare our current working directory with stage data.
+	diff --staged = used to compare our current working stage data to our last commit
+	
+	restore = used to get the last commited code
+	checkout -f = same to to get the last commited file
+	
