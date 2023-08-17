@@ -29,4 +29,21 @@
 	
 	restore = used to get the last commited code
 	checkout -f = same to to get the last commited file
+
+	rm x = to remove file(x = file name)
+	rm --cached x = to remove the file and its history
+	mv x y = to rename a file name (x = past name , y = present name)
+
+	git push origin x = to push our code to github (x = repositery name)
+
+
+	checkout -b x = to create a new branch of our repository
+	checkout x = to switch between branches (x = branch name)
+	branch = it will tell us about the all branches our repositery has
+	merge x = it will merge the code of main branch to other branch(x = new branch name)
+
+	remote -v = to check either our branch is a remote repositery or not.
+	Pull origin x = to pull our code from another repositery/github(x = repositery name)
+	
+	config --global alias.x y = when we have to change our commands code according to our choice (x = new name / y = old command name (if our command contain 	space then we use '' while writing)
 	
